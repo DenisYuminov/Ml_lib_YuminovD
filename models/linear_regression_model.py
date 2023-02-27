@@ -23,7 +23,7 @@ class LinearRegression():
         pass
 
     def calculate_model_prediction(self, plan_matrix) -> np.ndarray:
-        return self.weights.dot(plan_matrix)
+        return self.weights.dot(plan_matrix).ravel()
 
     def train_model(self, inputs: np.ndarray, targets: np.ndarray) -> None:
         """Not this homework"""

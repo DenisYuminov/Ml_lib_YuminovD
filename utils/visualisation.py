@@ -4,7 +4,7 @@ import numpy as np
 class Visualisation():
 
     @staticmethod
-    def visualise_predicted_trace(prediction:np.ndarray,inputs:np.ndarray,targets:np.ndarray,plot_title=''):
+    def visualise_predicted_trace(prediction: np.ndarray, inputs:np.ndarray, targets:np.ndarray,plot_title=''):
         #  visualise predicted trace and targets
         """
 
@@ -24,13 +24,13 @@ class Visualisation():
 
         prediction_array = go.Scatter(
             x=inputs,
-            y=prediction.flatten(),
+            y=prediction,
             name="Prediction",
             mode='lines'
         )
         figure.update_layout(
             title=plot_title,
-            legend_title="Legend type"
+            legend_title="Legend name"
         )
         figure.add_traces([targets_array, prediction_array])
         figure.show()
