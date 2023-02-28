@@ -13,6 +13,7 @@ class LinearRegression():
         pass
 
     def __plan_matrix(self, inputs: np.ndarray) -> np.ndarray:
+        #
         plan_matrix = []
         for base_function in self.base_functions:
             plan_matrix.append(base_function(inputs))

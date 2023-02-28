@@ -1,6 +1,7 @@
 import numpy as np
 from utils.common_functions import read_dataframe_file
 
+
 class LinRegDataset():
 
     def __call__(self, dataframe_path:str)->dict:
